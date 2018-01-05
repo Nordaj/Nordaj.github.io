@@ -21,16 +21,16 @@ h2{
 }
 
 .Item img{
-    height: 100%;
-    min-width: 10%;
+	width: 20%;
+	max-width: 150px;
 	float: left;
 }
 
 .Title{
 	width: 25%;
-	min-width: 50px;
+	//min-width: 50px;
 	height: 100%;
-	min-height: 10px;
+	//min-height: 10px;
 	float: left;
 	margin: 5px;
 }
@@ -50,13 +50,13 @@ h2{
 
 .Item p {
 	color: #f6f6f6;
+	display: inline-block;
 	position: relative;
-	width: 50%;
+	width: 40%;
 	height: 80px;
 	float: right;
 	margin: 10px;
 	overflow: hidden;
-	display: inline;
 }
 
 h4{
