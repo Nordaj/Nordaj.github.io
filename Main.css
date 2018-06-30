@@ -51,12 +51,12 @@ h2{
 .Item p {
 	color: #f6f6f6;
 	position: relative;
-	width: 50%;
 	height: 80px;
 	float: right;
 	margin: 10px;
-	overflow: hidden;
 	display: inline;
+	width: 35%;
+	max-width: 50%;
 }
 
 h4{
