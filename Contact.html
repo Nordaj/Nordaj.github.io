@@ -17,8 +17,8 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">About</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="Programming.html">Programming</a>
@@ -26,37 +26,46 @@
 					<li class="nav-item">
 						<a class="nav-link" href="GameArt.html">Game Art</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Contact.html">Contact</a>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 
 		<div class="container text-light">
-			<h1 class="text-center page-title">About</h1>
+			<h1 class="text-center page-title">Contact</h1>
+			<h4 class="text-center page-title" style="color: #B0B0B0">I'd love to hear from you.</h4>
 
-			<h3>SUMMARY</h3>
-			<p>I am a self taught game programmer with 4 years of experience. I have published 2 games on the google play store, Fail Air, and A Bounce Game. The first 3 years of my game development journey was focused on the Unity3D game engine, and various software to assist in that. For the past year and many to come, I have been interested in graphics programming, and developed my current project, Lil Engie game engine. Throughout the years, I have also enjoyed the artistic side of games, such as modeling and texturing. </p>
-
-			<h3>SKILLLS</h3>
-			<p><b>Languages</b>: C++, C#, Javascript, GML, HTML, CSS</p>
-			<p><b>Software</b>: Visual Studio, Unity3D, Maya, Mudbox, Blender, Substance Designer, Substance Painter, Photoshop, GIMP, Code blocks, Game Maker</p>
-
-			<h3>EDUCATION</h3>
-			<p>East Valley Institute of Technology - 3D Animation (2018-2020)</p>
-
-			<h3>RESUME</h3>
-			<button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Expand</button>
-			<a href="Resume.pdf" class="btn btn-dark" role="button" aria-expanded="false" aria-controls="collapseExample" download="JordanCResume">Download PDF</a>
-			<div class="collapse" id="collapseExample">
-				<br />
-				<div class="card card-body">
-					<object data="Resume.pdf" type="application/pdf" width="100%" height="1150px">
-						<p> Oops, looks like you dont have a pdf plugin. </p>
-					</object>
+			<form action="http://formspree.io/nordajnapmach@gmail.com" method="POST">
+				<div class="row">
+					<div class="col">
+						<input type="text" name="name" placeholder="Your Name" class="form-control">
+					</div>
+					<div class="col">
+						<input type="email" name="_replyto" placeholder="Email Address" class="form-control">
+					</div>
 				</div>
-			</div>
+				<br />
+				<div class="row">
+					<div class="col">
+						<label for="message">Message</label>
+						<textarea class="form-control" name="body" rows="3" id="message"></textarea>
+					</div>
+				</div>
+				<br />
+				<div class="row">
+					<div class="col">
+						<input type="submit" value="Send" class="btn btn-primary">
+					</div>
+				</div>
+			</form>
+
+			<h1 class="text-center page-title">My Information</h1>
+			<p class="info">
+				<b>Email</b>: nordajnapmach@gmail.com <br />
+				<b>Phone</b>: (928) 301-0728 <br />
+			</p>
 
 			<!--Series of breaks to make up for footer-->
 			<br /><br /><br /><br /><br /><br /><br />
@@ -93,6 +102,10 @@
 
 			.page-title{
 				margin: 25px;
+			}
+
+			.info{
+				font-size: 20px;
 			}
 		</style>
 
