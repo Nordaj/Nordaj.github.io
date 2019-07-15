@@ -36,79 +36,126 @@
 	<div class="container text-light">
 		<h2 class="text-center page-title">Some of my work</h2>
 
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<!--Lil Engie-->
-					<div class="card text-dark" style="width: 18rem;">
-						<img class="card-img-top" src="Programming/Pictures/LilEngie.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Lil Engie</h5>
-							<p class="card-text">Open source C++ game engine currently under development, adding D3D11 support.</p>
-							<!--<a target="_blank" href="#" class="btn btn-primary">More</a>-->
-							<a target="_blank" href="https://github.com/Nordaj/LilEngie" class="btn btn-primary">Github Repo</a>
-						</div>
+		<div>
+			<!--2D Water-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>2D Water</h2>
+						<h5>Water with dynamic waves and custom buoyancy physics. (In development)</h5>
+						<p>This 2D Water project is what I am currently working on to sell as an asset on the asset store. The dynamic waves are a simple implementation of Hooke's Law. The waves are calculated with a much cheaper method than the several other tutorials online. Each vertex position is modified directly without needing to include any unnecessary components in the scene. The current physics showcased in the following video is an example of quick, circle based buoyancy. Each body is defined with a series of circles and the amount of submersion of each circle is calculated with minimal cost and uses Archimedes' Principle. The buoyant objects are reactive to the waves rather than just a static collider. Another, more costly but more realistic method of 2D buoyancy is in the works which includes calculating new convex shapes from the submerged part of each body. From these shapes, we can calculate the area that is submerged along with the exact center of the buoyant force. Several techniques go into the artistic side of things as well, this includes cheap light rays, a cheap surface line which does not require any additional objects in the scene, distortion in which the intensity can be based on the depth and limited visibility based on depth. I have plans to include even more to make the prettiest water possible.</p>
+						<video src="Programming/Videos/Water2D.mp4" height="400px" controls></video>
 					</div>
 				</div>
-				<div class="col">
-					<!--C++ Rendering Engine-->
-					<div class="card text-dark" style="width: 18rem;">
-						<img class="card-img-top" src="Programming/Pictures/Render.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">C++ Rendering Engine</h5>
-							<p class="card-text">C++ and OpenGL rendering engine created to get into basic graphics programming concepts.</p>
-							<a target="_blank" href="https://github.com/Nordaj/OpenGL-n-CPP" class="btn btn-primary">Github Repo</a>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<!--C# A Bounce Game-->
-					<div class="card text-dark" style="width: 18rem;">
-						<img class="card-img-top" src="Programming/Pictures/BallGame.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">A Bounce Game</h5>
-							<p class="card-text">Android arcade style game created in Unity3D. Free to play on google play store.</p>
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=com.Jordan.Bouncin" class="btn btn-primary">Play Store</a>
-							<a target="_blank" href="https://www.dropbox.com/s/1j8v9baoi3vrqg1/BounceGame.zip?dl=0" class="btn btn-primary">Get Files</a>
-						</div>
-					</div>
-				</div>
+				<hr />
 			</div>
-			<div class="row">
-				<div class="col">
-					<!--One Week Game-->
-					<div class="card text-dark" style="width: 18rem;">
-						<img class="card-img-top" src="Programming/Pictures/Week.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">One Week Game</h5>
-							<p class="card-text">WebGL game made in one week to challenge myself. No assets pruchased or downloaded.</p>
-							<a target="_blank" href="http://toodalou.000webhostapp.com/" class="btn btn-primary">Play Online</a>
-							<a target="_blank" href="https://www.dropbox.com/s/lvazynvcl3x6zno/BallGame.zip?dl=0" class="btn btn-primary">Get Files</a>
-						</div>
+
+			<!--Lil Engie 2-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>Lil Engie 2</h2>
+						<h5>Open Source Game Engine. (In development)</h5>
+						<p>Lil Engie 2 is a complete re creation of my first game engine Lil Engie. I made several design mistakes and learned a lot from that engine that are corrected in this new engine. I built this one to be as flexable as possible and hope to work on it over the course of a long time. It curently is an incomplete engine but supports both OpenGL and Direct3D and was built to easily add more API's. Several components of the engine are in a working state but before it can run a game, it needs more work. Development has been paused for a few months to focus on other development related things but it will resume as soon as possible.</p>
+						<a href="https://github.com/Nordaj/LilEngie2">Github Repository</a>
 					</div>
 				</div>
-				<div class="col">
-					<!--UI Switch-->
-					<div class="card text-dark" style="width: 18rem;">
-						<img class="card-img-top" src="Programming/Pictures/UISwitch.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">UI Switch</h5>
-							<p target="_blank" class="card-text">Unity3D switch script and sprites. Not much but serves as a simple demo of my work.</p>
-							<a target="_blank" href="https://www.dropbox.com/s/9simgbllae93f2p/UISwitch.unitypackage?dl=0" class="btn btn-primary">Get Files</a>
-						</div>
+				<hr />
+			</div>
+
+			<!--Grass Deformation-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>Grass Deformation</h2>
+						<h5>Fast, Realtime Grass Deformation</h5>
+						<p>This asset was built for a friend's game but need for it was lost so now it shall remain here. It is a highly optimized, and easy to use grass deformation asset. Most grass deformation solutions online dont work well with large foliage models in the case of several vertices on the same mesh surrounding the player would get stretched. Other solutions are cpu based and expensive. I offer a bit of a creative way to get the best of both worlds. You can have complex foliage meshes and wont need to worry about odd stretching and it is extremely cheap as all deformation occurs on the vertex shader (no need to update the vertex buffer). I have plans to release this asset one day after giving it more artistic work so I will not be providing the source here. If you would like the files of anything I haven't given, feel free to ask.</p>
+						<video src="Programming/Videos/GrassDeformation.mp4" height="400px" controls></video>
 					</div>
 				</div>
-				<div class="col">
-					<!--Toon Water-->
-					<div class="card text-dark" style="width: 18rem;">
-						<img class="card-img-top" src="Programming/Pictures/ToonWater.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Toon Water</h5>
-							<p class="card-text">Toon water effect with both, fade out and cutout styles. Made in Unity3D.</p>
-							<a target="_blank" href="https://www.dropbox.com/s/gkyesaoocwyz2uh/SkyToonWater.zip?dl=0" class="btn btn-primary">Get Files</a>
-						</div>
+				<hr />
+			</div>
+
+			<!--Lil Engie-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>Lil Engie</h2>
+						<h5>Open Source Game Engine.</h5>
+						<p>Lil Engie was my first attempt at making a game engine, built in C++ using OpenGL it is an engine that could potentially run a game (although likely to have limitations and bugs). It had many features such as a custom human readable scene files, text rendering with effects, various lighting and easy shader abstraction, easy to use custom component creation, and input handling.</p>
+						<a href="https://github.com/Nordaj/LilEngie/">Github Repository</a>
+					</div>
+					<div class="col-">
+						<img src="Programming/Pictures/LilEngie.jpg" width="300px">
 					</div>
 				</div>
+				<hr />
+			</div>
+
+			<!--C++ Rendering Engine-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>C++ Rendering Engine</h2>
+						<h5>Open Source Graphics Learning Project.</h5>
+						<p>This was my first ever graphics programming related project. I used C++ and OpenGL with a very simple setup. This is the project where I decided to make my own math library instead of using GLM like the others. It was a great learning exercise but ended up taking about as much time as everything else. My understanding of the math at this time wasn't as good as it is now and as expected, it had some issues. I learned about various rendering techniques such as simple lighting, specularity and specular maps, and normal maps. This project was a fantastic first step to get me into the subject and made me love graphics programming.</p>
+						<a href="https://github.com/Nordaj/OpenGL-n-CPP">Github Repository</a>
+					</div>
+					<div class="col-">
+						<img src="Programming/Pictures/Render.jpg" width="300px">
+					</div>
+				</div>
+				<hr />
+			</div>
+
+			<!--Mesh Deformation-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>Runtime Mesh Deformation</h2>
+						<h5>Simple mesh deformation on impact</h5>
+						<p>A small and fun little project to demonstrate runtime mesh deformation on impact. It relies on unity's normal recalculation to recalculate the entire model's normal after each impact, I would have loved to calculate only the effected vertices myself but I didn't want this to be a multiple day project. It is more of an effect than a simulation but is convincing enough to be used in a game.</p>
+						<a href="https://www.dropbox.com/s/fms1elppkfiz9t0/Deformation.zip?dl=0">Download Source</a>
+					</div>
+					<div class="col-">
+						<img src="Programming/Pictures/Deformation.jpg" width="300px">
+					</div>
+				</div>
+				<hr />
+			</div>
+
+			<!--A Bounce Game-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>A Bounce Game</h2>
+						<h5>Simple 1 Month Android Game</h5>
+						<p>A Bounce Game was an Android game made in Unity3D to challenge myself and see what I could do with just a month and no assets other than my own. I had much larger hopes for this project but ran out of time so I had to scrap some features out. While this was a little disapointing it still works well as a portfolio project and showcases my experience with mobile development.</p>
+						<a href="https://play.google.com/store/apps/details?id=com.Jordan.Bouncin">Google Play Store</a>
+						<a style="margin-left:20px" href="https://www.dropbox.com/s/1j8v9baoi3vrqg1/BounceGame.zip?dl=0">Download Project</a>
+					</div>
+					<div class="col-">
+						<img src="Programming/Pictures/BallGame.jpg" width="300px">
+					</div>
+				</div>
+				<hr />
+			</div>
+
+			<!--One Week Game-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg">
+						<h2>One Week Game</h2>
+						<h5>A one week game development challenge</h5>
+						<p>This project was pretty simple and self explanatory. While being quite an old project with several mistakes that could have easily been fixed this project went smoothly and I was able to finish it on time. At the time I had little to no vector math knowledge and the camera movement really suffered from that. I was able to get it working in a web player in time. All art and assets were self made.</p>
+						<a href="http://toodalou.000webhostapp.com/">Play Online</a>
+						<a style="margin-left:20px" href="https://www.dropbox.com/s/lvazynvcl3x6zno/BallGame.zip?dl=0">Download Project</a>
+					</div>
+					<div class="col-">
+						<img src="Programming/Pictures/Week.jpg" width="300px">
+					</div>
+				</div>
+				<hr />
 			</div>
 		</div>
 
@@ -142,6 +189,21 @@
 				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 					<div class="card-body">
 						<script src="https://gist.github.com/Nordaj/59aeaae3a5b9a0c1ccc8962177fb13ca.js"></script>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingThree">
+					<h5 class="mb-1">
+						<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+							C - AES Encryption Source
+						</button>
+					</h5>
+				</div>
+
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					<div class="card-body">
+						<script src="https://gist.github.com/Nordaj/cc987cf82456acdabe3c30c2087eb2e0.js"></script>
 					</div>
 				</div>
 			</div>
@@ -186,6 +248,14 @@
 
 		.card {
 			margin: 20px;
+		}
+
+		a {
+			color: aqua;
+		}
+
+		a:hover {
+			color: aqua;
 		}
 	</style>
 
